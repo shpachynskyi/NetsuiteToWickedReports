@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="custom" translate="label" sortOrder="10">
+            <label>Custom</label>
+        </tab>
+        <section id="module_netsuite_to_wicked_reports" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Sync Netsuite to WickedReports</label>
+            <tab>custom</tab>
+            <resource>Custom_NetSuiteToWickedReports::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="log_level" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Log Level</label>
+                    <source_model>\Custom\NetSuiteToWickedReports\Model\Config\Source\LogLevel</source_model>
+                </field>
+            </group>
+            <group id="netsuite" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Netsuite Configuration</label>
+                <field id="endpoint" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Endpoint</label>
+                </field>
+                <field id="host" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Host</label>
+                </field>
+                <field id="account" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Account</label>
+                </field>
+                <field id="consumer_key" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Consumer Key</label>
+                </field>
+                <field id="consumer_secret" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Consumer Secret</label>
+                </field>
+                <field id="token" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Token</label>
+                </field>
+                <field id="token_secret" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Token Secret</label>
+                </field>
+                <field id="signature_algorithm" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Signature Algorithm</label>
+                </field>
+            </group>
+            <group id="wicked_reports" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Wicked Reports Configuration</label>
+                <field id="api_key" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Api Key</label>
+                </field>
+                <field id="source_system" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Source System</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

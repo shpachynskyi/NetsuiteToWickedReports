@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <module_netsuite_to_wicked_reports>
+            <general>
+                <enable>0</enable>
+                <log_level>2</log_level>
+            </general>
+            <netsuite>
+                <signature_algorithm>sha256</signature_algorithm>
+            </netsuite>
+            <wicked_reports>
+                <source_system>Drberg_Magento2</source_system>
+            </wicked_reports>
+        </module_netsuite_to_wicked_reports>
+    </default>
+</config>

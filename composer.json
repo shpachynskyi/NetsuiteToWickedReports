@@ -1,0 +1,25 @@
+{
+    "name": "shpachynskyi/module-netsuite-to-wicked-reports",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "info@mage2gen.com",
+            "name": "Mage2Gen"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ryanwinchester/netsuite-php": "*",
+        "wickedreports/php-sdk": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Custom\\NetSuiteToWickedReports\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
